@@ -79,20 +79,3 @@ graph LR
     D --> E[Markdown Report]
     style B fill:#2d6a4f,stroke:#fff,stroke-width:2px
     style D fill:#2d6a4f,stroke:#fff,stroke-width:2px
-
-📂 Project layout
-basic-agent-secured-baseline/
-├── prompts/                    ← version-controlled system prompts (treated as code)
-├── src/
-│   └── secured_research_crew/
-│       ├── config/             ← agents.yaml / tasks.yaml skeletons
-│       ├── callbacks.py        ← structured JSONL security logger
-│       ├── tools.py            ← strict tool allow-list factory
-│       ├── crew.py
-│       └── main.py
-├── attacks/                    ← documented attack attempts + evidence
-├── logs/runs/                  ← per-run structured audit trails (.jsonl)
-├── outputs/                    ← final reports
-├── .github/workflows/          ← basic CI stub
-├── requirements.txt
-└── security_baseline.md        ← detailed delta vs vanilla CrewAI
